@@ -5,7 +5,7 @@
 namespace MCR
 {
 
-utxx::concurrent_spsc_queue< boost::shared_ptr< packet >, 128 > udp_queue;
+utxx::concurrent_spsc_queue< boost::shared_ptr< packet >, 4096 > udp_queue;
 long long packet::mseq=0;
 boost::fast_pool_allocator< packet > pool;
 
