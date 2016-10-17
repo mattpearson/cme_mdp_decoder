@@ -7,5 +7,10 @@ Relies on a few open source projects to work:
 * [utxx](https://github.com/saleyn/utxx) for spsc lockfree queue
 * [Real Logic SBE](https://github.com/real-logic/simple-binary-encoding) for parsing CME's template into c++ code
 
+To compile:
+
+```bash
+g++ -std=c++11 -I"." CMEFeedHandler.cpp MulticastGroup.cpp MulticastGroup.h PacketDecoder.cpp PacketDecoder.h -levent -lboost_system -lutxx -o CMEFeedHandler
+```
 
 
